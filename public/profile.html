@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profile User - Estetik Pink</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="bg-[#FFEDFA] min-h-screen pt-28 overflow-x-hidden font-[Poppins] ">
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-8xl mx-auto flex items-center gap-60 px-6 py-4 pl-20">
+      <a href="homepage.html">
+        <h1 class="text-3xl font-serif font-light whitespace-nowrap">CLAIRE & CO</h1>
+      </a>
+      <form class="flex flex-1 max-w-lg relative" role="search">
+        <input type="search" id="default-search" placeholder="Search" class="block w-full rounded-l-lg border border-gray-300 p-3 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300" style="height: 2.5rem;" />
+        <button type="submit" class="bg-[#FFEDFA] rounded-r-lg px-4 text-sm font-medium hover:bg-pink-200 transition-colors" style="height: 2.5rem;">
+          Search
+        </button>
+      </form>
+      <div class="flex items-center gap-10">
+        <img src="/dist/img/message (3).png" alt="Message" class="h-7 w-7 cursor-pointer" />
+        <img src="/dist/img/notification-bell (2).png" alt="Notification" class="h-7 w-7 cursor-pointer" />
+        <a href="Cart.html">
+          <img src="/dist/img/shopping-bag (5).png" alt="Shopping Bag" class="h-7 w-7 cursor-pointer" />
+        </a>
+        <img src="/dist/img/user (4).png" alt="User" class="h-7 w-7 cursor-pointer" />
+      </div>
+    </div>
+  </nav>
+
+  <!-- Wrapper Utama -->
+  <div class="max-w-8xl mx-auto px-6">
+
+  <!-- Card Profil -->
+  <div class="bg-white rounded-lg shadow-lg pr-20 py-10">
+    <div class="flex flex-col md:flex-row gap-6">
+
+      <!-- Foto & Nama -->
+      <div class="flex flex-col items-center w-full md:w-1/4 p-2">
+        <img src="/dist/img/userr.jpg" alt="Profile Picture"
+          class="rounded-full w-32 h-32 object-cover mb-3 border-4 border-pink-500" />
+        <h2 class="text-xl font-semibold text-gray-800">Dewan Daru</h2>
+        <p class="text-pink-500 font-medium text-sm">@dewandaru</p>
+      </div>
+
+      <!-- Form Data -->
+      <div class="flex-1">
+        <h3 class="text-xl font-semibold mb-4 text-gray-800">Personal Settings</h3>
+        <form class="space-y-4">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <!-- Input fields with reduced padding -->
+            <div>
+              <label for="first-name" class="block text-gray-600 text-sm mb-1">First Name</label>
+              <input type="text" id="first-name" value="Dewan"
+                class="w-full p-1.5 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            <div>
+              <label for="gender" class="block text-gray-600 text-sm mb-1">Gender</label>
+              <input type="text" id="gender" value="Male"
+                class="w-full p-1.5 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            <div>
+              <label for="age" class="block text-gray-600 text-sm mb-1">Age</label>
+              <input type="text" id="age" value="24 th"
+                class="w-full p-1.5 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            <div>
+              <label for="birthday" class="block text-gray-600 text-sm mb-1">Birthday</label>
+              <input type="text" id="birthday" value="**,**,****"
+                class="w-full text-gray-400 p-1.5 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-600 text-sm mb-1">Phone Number</label>
+              <input type="text" id="phone" value="+62 1233-4***-5***"
+                class="w-full p-1.5 text-gray-400 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            <div>
+              <label for="email" class="block text-gray-600 text-sm mb-1">Email Address</label>
+              <input type="email" id="email" value="dewan.daru@gmail.com"
+                class="w-full p-1.5 border rounded-md border-gray-300 focus:outline-pink-400 text-sm" />
+            </div>
+            
+          </div>
+
+          <button type="submit"
+            class="w-full bg-pink-500 hover:bg-[#ffceea] text-white text-base font-semibold py-2 rounded-lg transition">
+            Update
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+    <!-- Card Riwayat Pemesanan -->
+    <div class="bg-white rounded-lg shadow-lg p-6 mt-10 ">
+      <h3 class="text-2xl font-semibold mb-6 text-gray-800">Riwayat Pemesanan</h3>
+
+<!-- Card Panjang -->
+<div class="space-y-6">
+  <div class="border-gray-300 border rounded-lg shadow-md p-6 flex flex-col gap-4">
+    <div class="flex items-center gap-4">
+      <img src="/dist/img/jam-removebg-preview.png" class="w-24 h-24 object-contain bg-[#FFEDFA] rounded-md" />
+      <div class="flex-1">
+        <h4 class="text-lg font-semibold text-gray-800">Rolex Cellini Date Black Dial</h4>
+        <p class="text-gray-600">Quantity: <span class="font-medium">1</span></p>
+        <p class="text-gray-600">Price: <span class="font-medium">$8.999,99</span></p>
+      </div>
+      <div class="text-right">
+        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-xl font-bold text-pink-600">$8.999,99</p>
+        <a href="detail.html">
+          <button class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+            Rate
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-gray-300 border rounded-lg shadow-md p-6 flex flex-col gap-4">
+    <div class="flex items-center gap-4">
+      <img src="/dist/img/jam-removebg-preview.png" class="w-24 h-24 object-contain bg-[#FFEDFA] rounded-md" />
+      <div class="flex-1">
+        <h4 class="text-lg font-semibold text-gray-800">Rolex Cellini Date Black Dial</h4>
+        <p class="text-gray-600">Quantity: <span class="font-medium">1</span></p>
+        <p class="text-gray-600">Price: <span class="font-medium">$8.999,99</span></p>
+      </div>
+      <div class="text-right">
+        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-xl font-bold text-pink-600">$8.999,99</p>
+        <a href="detail.html">
+          <button class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+            Rate
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-gray-300 border rounded-lg shadow-md p-6 flex flex-col gap-4">
+    <div class="flex items-center gap-4">
+      <img src="/dist/img/jam-removebg-preview.png" class="w-24 h-24 object-contain bg-[#FFEDFA] rounded-md" />
+      <div class="flex-1">
+        <h4 class="text-lg font-semibold text-gray-800">Rolex Cellini Date Black Dial</h4>
+        <p class="text-gray-600">Quantity: <span class="font-medium">1</span></p>
+        <p class="text-gray-600">Price: <span class="font-medium">$8.999,99</span></p>
+      </div>
+      <div class="text-right">
+        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-xl font-bold text-pink-600">$8.999,99</p>
+        <a href="detail.html">
+          <button class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+            Rate
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-gray-300 border rounded-lg shadow-md p-6 flex flex-col gap-4">
+    <div class="flex items-center gap-4">
+      <img src="/dist/img/jam-removebg-preview.png" class="w-24 h-24 object-contain bg-[#FFEDFA] rounded-md" />
+      <div class="flex-1">
+        <h4 class="text-lg font-semibold text-gray-800">Rolex Cellini Date Black Dial</h4>
+        <p class="text-gray-600">Quantity: <span class="font-medium">1</span></p>
+        <p class="text-gray-600">Price: <span class="font-medium">$8.999,99</span></p>
+      </div>
+      <div class="text-right">
+        <p class="text-sm text-gray-500">Total</p>
+        <p class="text-xl font-bold text-pink-500">$8.999,99</p>
+        <a href="detail.html">
+          <button class="mt-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition">
+            Rate
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Optional script -->
+  <script src="script.js"></script>
+</body>
+</html>

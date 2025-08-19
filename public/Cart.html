@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <title>Clairs & Co - Product List</title>
+</head>
+<body class="bg-[#FFEDFA] overflow-x-hidden font-[Poppins]">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+    <div class="max-w-8xl mx-auto flex items-center gap-60 px-6 py-4 pl-20">
+      <a href="homepage.html">
+            <h1 class="text-3xl font-serif font-light whitespace-nowrap">CLAIRE & CO</h1>
+        </a>
+      
+        <form class="flex flex-1 max-w-lg relative" role="search">
+        <input type="search" id="default-search" placeholder="Search" class="block w-full rounded-l-lg border border-gray-300 p-3 text-gray-900 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300" style="height: 2.5rem;"/>
+        <button type="submit" class="bg-[#FFEDFA] rounded-r-lg px-4 text-sm font-medium hover:bg-pink-200 transition-colors" style="height: 2.5rem;">
+          Search
+        </button>
+      </form>
+
+      <div class="flex items-center gap-10">
+        <img src="/dist/img/message (3).png" alt="Message" class="h-7 w-7 cursor-pointer" />
+        <img src="/dist/img/notification-bell (2).png" alt="Notification" class="h-7 w-7 cursor-pointer" />
+        <img src="/dist/img/shopping-bag (5).png" alt="Shopping Bag" class="h-7 w-7 cursor-pointer" />
+        <a href="profile.html">
+          <img src="/dist/img/user (4).png" alt="User" class="h-7 w-7 cursor-pointer" />
+        </a>
+      </sdiv>
+    </div>
+  </nav>
+  
+  
+  <!-- cart -->
+  <div class="h-full overflow-y-scroll " >
+    <div class="px-36 pt-10 ">
+    </div>
+      <div id="cart-items-container" class="py-20"></div>
+  </div>
+
+<!-- Fixed Checkout Bar -->
+<div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md px-10 py-4 h-30  z-50">
+  <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+    
+
+<!-- Kontrol Pilih Semua dan Hapus -->
+<div class="flex items-center gap-4 mb-4">
+  <input type="checkbox" id="pilih-semua" class="w-5 h-5 cursor-pointer" />
+  <label for="pilih-semua" class="text-sm font-medium cursor-pointer">Pilih Semua</label>
+  <button onclick="confirmClearCart()" class="text-sm text-pink-600 hover:underline font-medium">Delete</button>
+</div>
+
+
+    <!-- Tengah: Input Voucher -->
+    <div class="flex items-center gap-2 w-full md:w-1/3">
+      <input
+        type="text"
+        placeholder="Masukkan kode voucher"
+        class="flex-1 border border-gray-300 rounded px-3 py-2 text-sm"
+      />
+      <button class="px-4 py-2 text-sm border border-gray-300 rounded hover:bg-[#FFEDFA] max-w-xl">
+        Apply Code
+      </button>
+    </div>
+
+    <!-- Kanan: Total + Checkout -->
+    <div class="flex items-center gap-4">
+      <div class="flex justify-between items-center max-w-7xl mx-auto px-4 py-4 gap-10 ">
+        <p class="text-2xl text-pink-600 font-semibold">Total: <span id="selected-total">$. 0</span></p>
+            <button onclick="checkoutSelected()" class="bg-[#BE5985] hover:bg-[#EC7FA9] text-white font-bold py-2 px-6 rounded">
+                Checkout
+               </button>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/flowbite@1.5.0/dist/flowbite.min.js"></script>
+<script src="/javascript/cart.js"></script>
+</html>

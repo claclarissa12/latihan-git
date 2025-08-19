@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Login - Clairs & Co</title>
+</head>
+
+<body class="min-h-screen bg-[#ffceea] overflow-x-hidden font-[Poppins]" >
+  <div class="pl-9 pt-5 space-y-16">
+
+    <!-- Header -->
+  <a href="landingpage.html">
+    <div class="flex items-center gap-8">
+      <img src="/dist/img/left-arrow (2).png" class="h-10" />
+      <p class="text-3xl font-medium">Please Log in to your Account</p>
+    </div>
+  </a>
+
+    <!-- Form -->
+    <div class="pt-15">
+      <form id="loginForm" class="mx-auto border-4 border-gray-100 rounded-xl p-6 bg-[#FFEDFA] shadow-md w-full max-w-xl space-y-6">
+        
+        <!-- Username -->
+        <div>
+          <label for="username" class="block mb-2 text-lg font-light">Username</label>
+          <input
+            type="text"
+            id="username"
+            class="w-full p-4 rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+            placeholder="username"
+          />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block mb-2 text-lg font-light">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="w-full p-4 rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+            placeholder="your password"
+          />
+        </div>
+
+        <!-- Error Message -->
+        <p id="errorMsg" class="text-red-500 text-sm font-medium hidden">Username dan Password wajib diisi!</p>
+
+        <!-- Link options -->
+        <div class="text-right text-sm font-medium space-y-1">
+          <p class="text-gray-700">Recovery Password</p>
+          <a href="registrasi.html" class="underline text-[#BE5985] hover:text-pink-300 transition">Create Account</a>
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit" class="w-full h-12 text-xl font-bold rounded-lg bg-[#ffceea] text-gray-800 hover:bg-[#FFEDFA] transition">
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+    <script src="/javascript/login.js"></script>
+</body>
+</html>

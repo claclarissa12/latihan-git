@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="../dist/output.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Register - Clairs & Co</title>
+</head>
+
+<body class="min-h-screen bg-[#ffceea]" style="font-family: 'Poppins', sans-serif;">
+  <div class="pl-9 pt-5 space-y-16">
+
+    <!-- Header -->
+    <a href="landingpage.html">
+      <div class="flex items-center gap-8">
+        <img src="/dist/img/left-arrow (2).png" class="h-10" />
+        <p class="text-3xl font-semibold">Create an account to get started</p>
+      </div>
+    </a>
+
+    <!-- Form -->
+    <div class="py-15">
+      <form id="registerForm" class="mx-auto border-4 border-gray-100 rounded-xl p-6 bg-[#FFEDFA] shadow-md w-full max-w-xl space-y-6">
+
+        <!-- Email / Phone -->
+        <div>
+          <label for="contact" class="block mb-2 text-lg font-light">Email / No.Handphone</label>
+          <input type="text" id="contact" class="w-full p-4 rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300" 
+          placeholder="you@example.com / 08xxxxxxxxxx" />
+        </div>
+
+        <!-- Username -->
+        <div>
+          <label for="username" class="block mb-2 text-lg font-light">Username</label>
+          <input type="text" id="username" class="w-full p-4 rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+            placeholder="username" />
+        </div>
+
+        <!-- Password -->
+        <div>
+          <label for="password" class="block mb-2 text-lg font-light">Password</label>
+          <input type="password" id="password" class="w-full p-4 rounded-lg border border-gray-300 bg-gray-50 text-sm text-gray-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-pink-300"
+            placeholder="your password" />
+        </div>
+
+        <!-- Error Message -->
+        <p id="errorMsg" class="text-red-500 text-sm font-medium hidden">Semua kolom wajib diisi!</p>
+
+        <!-- Login link -->
+        <div class="text-right text-sm font-medium">
+          <p>
+            Already have an account?
+            <a href="login.html" class="underline text-pink-600 hover:text-pink-800 transition">Login</a>
+          </p>
+        </div>
+
+        <!-- Register Button -->
+        <button type="submit" class="w-full h-12 text-xl font-bold rounded-lg bg-[#ffceea] text-gray-800 hover:bg-[#FFEDFA] transition">
+          Register
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Singkat JS -->
+  <script src="/javascript/regis.js"></script>
+</body>
+</html>
